@@ -1,0 +1,58 @@
+(6:config4:init19:1793315939732283000(7:version6:3.24.2)(9:build_dir6:_build)(4:argv(4:dune7:runtest7:--force))(3:env(21:COMMAND_MODE=unix200314:SHELL=/bin/zsh56:TMPDIR=/var/folders/hf/s1c8dl0d1dx__rs62bvw773m0000gn/T/42:__CFBundleIdentifier=com.jetbrains.pycharm21:HOME=/Users/ryansnell61:SSH_AUTH_SOCK=/var/run/com.apple.launchd.2dIkBSxE23/Listeners18:XPC_SERVICE_NAME=0595:PATH=/Users/ryansnell/.opam/default/bin:/Users/ryansnell/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.14/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/opt/homebrew/bin:/Users/ryansnell/.cargo/bin:/Users/ryansnell/Library/Application Support/JetBrains/Toolbox/scripts17:LOGNAME=ryansnell14:USER=ryansnell17:OSLogRateLimit=6413:XPC_FLAGS=0x037:__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x010:FIG_TERM=119:TERM=xterm-256color23:PROCESS_LAUNCHED_BY_Q=136:TERMINAL_EMULATOR=JetBrains-JediTerm24:PROCESS_LAUNCHED_BY_CW=152:TERM_SESSION_ID=140d3e4d-0f5a-427a-88d2-b4dc8c30c9b214:LC_CTYPE=UTF-87:SHLVL=177:PWD=/Users/ryansnell/Projects/school/CS514/Repository/snell.ryan/Assignment0767:OLDPWD=/Users/ryansnell/Projects/school/CS514/Repository/snell.ryan12:LANG=C.UTF-829:HOMEBREW_PREFIX=/opt/homebrew36:HOMEBREW_CELLAR=/opt/homebrew/Cellar33:HOMEBREW_REPOSITORY=/opt/homebrew139:FPATH=/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions34:INFOPATH=/opt/homebrew/share/info:37:OLLAMA_HOST=http://100.107.5.27:1143420:OPAMNOENVNOTICE=true49:OPAM_SWITCH_PREFIX=/Users/ryansnell/.opam/default155:CAML_LD_LIBRARY_PATH=/Users/ryansnell/.opam/default/lib/stublibs:/Users/ryansnell/.opam/default/lib/ocaml/stublibs:/Users/ryansnell/.opam/default/lib/ocaml65:OCAMLTOP_INCLUDE_PATH=/Users/ryansnell/.opam/default/lib/toplevel63:OCAML_TOPLEVEL_PATH=/Users/ryansnell/.opam/default/lib/toplevel85:OPAM_LAST_ENV=/Users/ryansnell/.opam/.last-env/env-adf2442a36c8dbfdf2d53398268420f8-041:_=/Users/ryansnell/.opam/default/bin/dune))(4:root73:/Users/ryansnell/Projects/school/CS514/Repository/snell.ryan/Assignment07)(3:pid4:7595)(11:initial_cwd73:/Users/ryansnell/Projects/school/CS514/Repository/snell.ryan/Assignment07)(5:start19:1793315939728367000))(3:log4:info19:1793315939732321000(7:message10:ocamlparam)(10:OCAMLPARAM5:unset))(6:thread12:spawn_thread19:1793315939732352000(4:name7:console))(3:log4:info19:1793315939732387000(7:message20:Shared cache enabled)(13:cache_enabled25:Enabled_except_user_rules))(3:log4:info19:1793315939732404000(7:message21:Shared cache location)(8:root_dir31:/Users/ryansnell/.cache/dune/db))(3:log4:info19:1793315939732423000(7:message14:Workspace root)(4:root73:/Users/ryansnell/Projects/school/CS514/Repository/snell.ryan/Assignment07))(3:log4:info19:1793315939734061000(7:message25:Auto-detected concurrency)(11:concurrency2:12))(6:thread12:spawn_thread19:1793315939734084000(4:name14:signal-watcher))(5:build11:build-start19:1793315939734126000(6:run_id1:0)(7:restart5:false)(6:rusage((13:user_cpu_time7:7201000)(15:system_cpu_time7:6547000)(6:maxrss8:26656768)(6:minflt4:1810)(6:majflt3:392)(7:inblock1:0)(7:oublock1:0)(5:nvcsw1:2)(6:nivcsw2:13))))(10:persistent2:db(19:17933159397341500005:32000)(4:path17:_build/.digest-db)(6:module9:DIGEST-DB)(9:operation4:load))(3:log4:info19:1793315939734381000(7:message12:Dune context)(7:context((4:name7:default)(4:kind7:default)(7:profile3:Dev)(6:merlin4:true)(14:fdo_target_exe())(9:build_dir(12:In_build_dir7:default))(15:instrument_with()))))(5:rules9:Dune load(19:17933159397343930005:99000)(3:dir1:.))(7:process5:start19:1793315939734807000(12:process_args(7:-config))(3:pid4:7597)(10:categories())(6:queued1:0)(4:prog45:/Users/ryansnell/.opam/default/bin/ocamlc.opt)(3:dir1:.))(7:process15:signal_received19:1793315939739099000(6:signal4:CHLD))(7:process6:finish(19:17933159397348070007:4318000)(12:process_args(7:-config))(3:pid4:7597)(10:categories())(4:prog45:/Users/ryansnell/.opam/default/bin/ocamlc.opt)(3:dir1:.)(4:exit1:0)(6:rusage((13:user_cpu_time7:1695000)(15:system_cpu_time7:1714000)(6:maxrss7:9191424)(6:minflt3:553)(6:majflt3:184)(7:inblock1:0)(7:oublock1:0)(5:nvcsw1:0)(6:nivcsw1:4))))(10:persistent2:db(19:17933159397394700005:46000)(4:path10:_build/.db)(6:module14:INCREMENTAL-DB)(9:operation4:load))(7:process5:start19:1793315939743241000(12:process_args())(3:pid4:7598)(10:categories())(6:queued4:1000)(4:prog15:./test_stlc.exe)(3:dir19:_build/default/test)(12:target_files(79:_build/.actions/default/test/runtest-test_stlc-dd828eebcbfeb6a212587252acf53ba8)))(7:process15:signal_received19:1793315940036341000(6:signal4:CHLD))(7:process6:finish(19:17933159397432410009:293169000)(12:process_args())(3:pid4:7598)(10:categories())(4:prog15:./test_stlc.exe)(3:dir19:_build/default/test)(4:exit1:0)(12:target_files(79:_build/.actions/default/test/runtest-test_stlc-dd828eebcbfeb6a212587252acf53ba8))(6:stdout2394:ok   context: empty has no bindings
+ok   context: extend then lookup
+ok   context: lookup of other name fails
+ok   context: inner binding shadows outer
+ok   T-Abs/T-Var: Boolean identity has type Bool -> Bool
+ok   T-App: identity applied to true has type Bool
+ok   higher-order: (Bool -> Bool) -> Bool -> Bool
+ok   T-True and T-False
+ok   T-If: accepts matching branches
+ok   T-If: accepts matching function-typed branches
+ok   error: unbound variable
+ok   error: applying a Boolean as a function
+ok   error: argument type mismatch
+ok   error: branch type mismatch
+ok   error: non-Boolean condition
+ok   error: unbound variable inside an abstraction body
+ok   error: variable is not in scope outside its binder
+ok   shadowing: inner x : Bool wins over outer x : Bool -> Bool
+ok   shadowing: result type follows the innermost binding
+ok   shadowing: shadowed outer binding is not visible
+ok   derive: type is Bool
+ok   derive: root rule is T-App
+ok   derive: conclusion term is the input term
+ok   derive: premises are T-Abs and T-True
+ok   derive: T-Abs premise has T-Var premise
+ok   derive: T-Var premise is under x:Bool
+ok   print: contains x:Bool |- x : Bool
+ok   print: contains abstraction conclusion
+ok   print: contains true conclusion
+ok   print: contains application conclusion
+ok   print: mentions T-Var
+ok   print: mentions T-Abs
+ok   print: mentions T-True
+ok   print: mentions T-App
+ok   derive: T-If root with three premises
+ok   derive agrees with typeof on every example
+ok   derive: root type matches returned type
+ok   failure report: names the rule T-App
+ok   failure report: shows the stuck subterm
+ok   failure report: explains the reason
+ok   failure report: argument mismatch mentions both types
+ok   failure report: points at the innermost failing subterm
+ok   failure report: branch mismatch reason
+ok   failure report: unbound variable
+ok   eval: identity applied to true is true
+ok   eval: not true = false
+ok   eval: higher-order application
+ok   eval: a lambda is already a value
+ok   eval: substitution under a binder
+ok   eval: subst renames a binder that would capture
+ok   eval: ill-typed term gets stuck (no type check involved)
+ok   static vs dynamic: well-typed term reaches a value of the same type
+ok   string_of_ty: left arrow is parenthesized
+ok   string_of_term: application of abstraction
+ok   string_of_type_error: unbound variable
+
+all tests passed
+)(6:rusage((13:user_cpu_time7:3488000)(15:system_cpu_time7:4172000)(6:maxrss7:2834432)(6:minflt3:257)(6:majflt2:14)(7:inblock1:0)(7:oublock1:0)(5:nvcsw1:0)(6:nivcsw1:5))))(6:action10:write-file(19:17933159400370330006:228000)(4:file79:_build/.actions/default/test/runtest-test_stlc-dd828eebcbfeb6a212587252acf53ba8)(4:size1:0))(6:thread12:spawn_thread19:1793315940037398000(4:name11:thread-pool))(6:thread12:spawn_thread19:1793315940037491000(4:name11:thread-pool))(6:thread12:spawn_thread19:1793315940037559000(4:name11:thread-pool))(6:thread12:spawn_thread19:1793315940037616000(4:name11:thread-pool))(5:rules13:Alias builder(19:17933159397345500009:303289000)(3:dir1:.))(5:build12:build-finish(19:17933159397341260009:303893000)(6:run_id1:0)(7:outcome7:success)(6:rusage((13:user_cpu_time8:12113000)(15:system_cpu_time8:10564000)(6:maxrss8:28639232)(6:minflt4:1935)(6:majflt3:392)(7:inblock1:0)(7:oublock1:0)(5:nvcsw1:5)(6:nivcsw2:49))))(7:process15:signal_received19:1793315940038109000(6:signal4:USR1))(10:persistent2:db(19:17933159400539060006:516000)(4:path10:_build/.db)(6:module14:INCREMENTAL-DB)(9:operation4:save))(6:config4:exit19:1793315940054462000(2:gc((10:stack_size1:0)(10:heap_words6:430791)(14:top_heap_words6:430791)(11:minor_words8:1179606.)(11:major_words7:323557.)(14:promoted_words7:321997.)(11:compactions1:0)(17:major_collections1:3)(17:minor_collections1:6)))(2:io((10:files_read((5:count2:13)(4:time6:775000)(5:bytes4:2677)))(13:files_written((5:count1:2)(4:time1:0)(5:bytes1:7)))(16:directories_read((5:count1:1)(4:time1:0)))))(6:digest((5:files((5:count1:1)(4:time5:18000)(5:bytes1:0)))(6:values((5:count1:3)(4:time4:5000)(5:bytes5:10084)))))(6:rusage((13:user_cpu_time8:12435000)(15:system_cpu_time8:11790000)(6:maxrss8:28704768)(6:minflt4:1943)(6:majflt3:392)(7:inblock1:0)(7:oublock1:0)(5:nvcsw1:7)(6:nivcsw2:54))))
