@@ -1,0 +1,132 @@
+==== Well-typed terms: type (static) and value (dynamic) ====
+
+Boolean identity
+  term  : lambda x:Bool.x
+  type  : Bool -> Bool
+  value : lambda x:Bool.x
+
+identity applied to true
+  term  : (lambda x:Bool.x) true
+  type  : Bool
+  value : true
+
+higher-order function
+  term  : lambda f:Bool -> Bool.lambda x:Bool.f x
+  type  : (Bool -> Bool) -> Bool -> Bool
+  value : lambda f:Bool -> Bool.lambda x:Bool.f x
+
+higher-order function, fully applied
+  term  : (lambda f:Bool -> Bool.lambda x:Bool.f x) (lambda b:Bool.if b then false else true) true
+  type  : Bool
+  value : false
+
+conditional
+  term  : if (lambda b:Bool.if b then false else true) true then lambda x:Bool.x else lambda y:Bool.y
+  type  : Bool -> Bool
+  value : lambda y:Bool.y
+
+shadowing: inner x wins
+  term  : lambda x:Bool -> Bool.lambda x:Bool.x
+  type  : (Bool -> Bool) -> Bool -> Bool
+  value : lambda x:Bool -> Bool.lambda x:Bool.x
+
+==== Ill-typed terms: rejected before evaluation ====
+
+applying a Boolean as a function
+  term  : true false
+  type  : REJECTED (expected a function type in function position, but found Bool)
+  value : not evaluated
+
+argument type mismatch
+  term  : (lambda x:Bool.x) (lambda y:Bool.y)
+  type  : REJECTED (argument type mismatch: function expects Bool but got Bool -> Bool)
+  value : not evaluated
+
+branch type mismatch
+  term  : if true then true else lambda x:Bool.x
+  type  : REJECTED (branches of 'if' must have the same type, but 'then' has Bool and 'else' has Bool -> Bool)
+  value : not evaluated
+
+non-Boolean condition
+  term  : if lambda x:Bool.x then true else false
+  type  : REJECTED (condition of 'if' must have type Bool, but found Bool -> Bool)
+  value : not evaluated
+
+unbound variable
+  term  : (lambda x:Bool.x) z
+  type  : REJECTED (unbound variable 'z')
+  value : not evaluated
+
+==== Why the type checker matters: evaluation alone gets stuck ====
+
+  eval (true false) = true false   (no rule applies)
+
+==== Typing derivation: (lambda x:Bool. x) true ====
+
+    ------------------ T-Var
+    x:Bool |- x : Bool
+--------------------------------- T-Abs    -------------- T-True
+|- lambda x:Bool.x : Bool -> Bool          |- true : Bool
+---------------------------------------------------------------- T-App
+                |- (lambda x:Bool.x) true : Bool
+
+==== Typing derivation: higher-order function ====
+
+------------------------------------------ T-Var    ---------------------------------- T-Var
+f:Bool -> Bool, x:Bool |- f : Bool -> Bool          f:Bool -> Bool, x:Bool |- x : Bool
+-------------------------------------------------------------------------------------------- T-App
+                            f:Bool -> Bool, x:Bool |- f x : Bool
+-------------------------------------------------------------------------------------------------- T-Abs
+                        f:Bool -> Bool |- lambda x:Bool.f x : Bool -> Bool
+-------------------------------------------------------------------------------------------------------- T-Abs
+              |- lambda f:Bool -> Bool.lambda x:Bool.f x : (Bool -> Bool) -> Bool -> Bool
+
+==== Typing derivation: conditional with a free variable in Gamma ====
+
+------------------ T-Var    ---------------------- T-False    --------------------- T-True
+p:Bool |- p : Bool          p:Bool |- false : Bool            p:Bool |- true : Bool
+------------------------------------------------------------------------------------------ T-If
+                        p:Bool |- if p then false else true : Bool
+
+==== Failed derivations ====
+
+applying a Boolean as a function
+Type error: no derivation exists for the judgment
+  |- true false : ?
+Rule T-App cannot be applied to the subterm
+  true false
+in context: (empty)
+Reason: expected a function type in function position, but found Bool
+
+argument type mismatch
+Type error: no derivation exists for the judgment
+  |- (lambda x:Bool.x) (lambda y:Bool.y) : ?
+Rule T-App cannot be applied to the subterm
+  (lambda x:Bool.x) (lambda y:Bool.y)
+in context: (empty)
+Reason: argument type mismatch: function expects Bool but got Bool -> Bool
+
+branch type mismatch
+Type error: no derivation exists for the judgment
+  |- if true then true else lambda x:Bool.x : ?
+Rule T-If cannot be applied to the subterm
+  if true then true else lambda x:Bool.x
+in context: (empty)
+Reason: branches of 'if' must have the same type, but 'then' has Bool and 'else' has Bool -> Bool
+
+non-Boolean condition
+Type error: no derivation exists for the judgment
+  |- if lambda x:Bool.x then true else false : ?
+Rule T-If cannot be applied to the subterm
+  if lambda x:Bool.x then true else false
+in context: (empty)
+Reason: condition of 'if' must have type Bool, but found Bool -> Bool
+
+unbound variable
+Type error: no derivation exists for the judgment
+  |- (lambda x:Bool.x) z : ?
+Rule T-Var cannot be applied to the subterm
+  z
+in context: (empty)
+Reason: unbound variable 'z'
+
