@@ -1,0 +1,2 @@
+(* Field order does not matter. Expected: Bool, true *)
+(lambda r:{a:Nat, b:Bool}. r.b) {b=true, a=0}

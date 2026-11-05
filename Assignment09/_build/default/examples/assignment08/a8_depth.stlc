@@ -1,0 +1,2 @@
+(* Depth subtyping. Expected: Nat, 1 *)
+(lambda r:{p:{x:Nat}}. r.p.x) {p={x=succ 0, y=true}, q=false}

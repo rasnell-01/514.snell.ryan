@@ -1,0 +1,4 @@
+(* Synthesis rejects "if true then 0 else false"; checking it against Top
+   succeeds because each branch is checked against Top separately.
+   Expected: Top, 0 *)
+(if true then 0 else false) as Top

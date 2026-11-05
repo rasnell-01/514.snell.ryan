@@ -1,0 +1,2 @@
+(* The nonexecuted branch also violates the expected result type. *)
+(if true then lambda n. n else lambda n. false) as (Nat -> Nat)

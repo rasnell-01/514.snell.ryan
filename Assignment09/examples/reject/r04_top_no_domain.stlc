@@ -1,0 +1,2 @@
+(* Top supplies no function domain. *)
+(lambda x. x) as Top

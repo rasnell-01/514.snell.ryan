@@ -1,0 +1,6 @@
+(* H. Existing function variance. Expected: Nat, 0 *)
+let use =
+  lambda f:({id:Nat, active:Bool} -> {id:Nat}).
+    (f {id=0, active=true}).id
+in
+use (lambda p:{id:Nat}. {id=p.id, active=true})

@@ -1,0 +1,5 @@
+(* E. Expected type propagated into both conditional branches. Expected: Nat, 1 *)
+((if true
+  then lambda n. succ n
+  else lambda n. n)
+ as (Nat -> Nat)) 0

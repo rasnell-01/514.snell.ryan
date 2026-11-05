@@ -1,0 +1,2 @@
+(* Explicit parameter annotation is incompatible. *)
+(lambda x:Nat. x) as (Bool -> Nat)

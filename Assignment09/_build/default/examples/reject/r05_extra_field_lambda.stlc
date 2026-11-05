@@ -1,0 +1,2 @@
+(* The extra field has no expected type and cannot synthesize. *)
+({run=lambda x. x} as {})

@@ -1,0 +1,3 @@
+(* C. Nested contextual inference. Expected: Nat, 1 *)
+((lambda x. lambda y. x) as (Nat -> Bool -> Nat))
+(succ 0) true

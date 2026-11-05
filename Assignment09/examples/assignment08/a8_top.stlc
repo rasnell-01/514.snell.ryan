@@ -1,0 +1,2 @@
+(* Anything is a subtype of Top. Expected: Bool, true *)
+(lambda x:Top. true) 0

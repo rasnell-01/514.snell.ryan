@@ -1,0 +1,8 @@
+(* Contextual checking respects shadowing and closure capture.
+   The outer x is a Bool; the lambda's x is a Nat taken from the expected
+   domain; the closure captures x = 1; the last x is a Bool again.
+   Expected: Nat, 1 *)
+let x = true in
+let k = ((lambda x. lambda y. x) as (Nat -> Bool -> Nat)) (succ 0) in
+let x = false in
+k x

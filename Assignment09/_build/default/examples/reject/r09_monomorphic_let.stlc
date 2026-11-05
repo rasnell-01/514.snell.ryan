@@ -1,0 +1,2 @@
+(* Binding has one monomorphic type; the Boolean application fails. *)
+let id = ((lambda x. x) as (Nat -> Nat)) in {a=id 0,b=id true}

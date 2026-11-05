@@ -1,0 +1,2 @@
+(* A. Annotation supplied by an ascription. Expected: Nat, 1 *)
+((lambda x. succ x) as (Nat -> Nat)) 0

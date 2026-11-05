@@ -1,0 +1,2 @@
+(* Without an expected type the branches must be mutual subtypes. Rejected. *)
+if true then 0 else false

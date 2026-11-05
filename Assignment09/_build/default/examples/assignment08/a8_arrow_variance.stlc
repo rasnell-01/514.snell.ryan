@@ -1,0 +1,2 @@
+(* Contravariant domain, covariant result. Expected: Top, 0 *)
+(lambda f:({x:Nat, y:Bool} -> Top). f {x=0, y=false}) (lambda r:{x:Nat}. r.x)

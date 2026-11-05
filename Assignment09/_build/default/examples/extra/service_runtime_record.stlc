@@ -1,0 +1,3 @@
+(* The static type hides active; the runtime value still has it.
+   Expected: {run:Nat -> Nat}, a record with both run and active. *)
+{run=lambda n. succ n, active=true} as {run:Nat -> Nat}

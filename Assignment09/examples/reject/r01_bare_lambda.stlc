@@ -1,0 +1,2 @@
+(* No expected domain type during synthesis. *)
+lambda x. x

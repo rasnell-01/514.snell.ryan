@@ -1,0 +1,5 @@
+(test
+ (name test_main)
+ (libraries stlc)
+ (deps
+  (source_tree ../examples)))

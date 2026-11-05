@@ -1,0 +1,4 @@
+(* A Student record checked against the smaller Person interface. Expected: Nat, 7 *)
+let student = {name=7, year=succ 0, enrolled=true} in
+let greet = lambda p:{name:Nat}. p.name in
+greet student

@@ -1,0 +1,2 @@
+(* Expected parameter interface lacks active. *)
+((lambda p. p.active) as ({id:Nat} -> Bool))

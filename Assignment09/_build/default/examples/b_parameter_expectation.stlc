@@ -1,0 +1,3 @@
+(* B. Annotation supplied by a function parameter. Expected: Nat, 1 *)
+let apply = lambda f:(Nat -> Nat). f 0 in
+apply (lambda n. succ n)

@@ -1,0 +1,2 @@
+(* Let. Expected: Bool, false *)
+let x = succ 0 in iszero x

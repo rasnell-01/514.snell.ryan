@@ -1,0 +1,2 @@
+(* Ascription to a supertype. Expected: Nat, 0 *)
+({x=0, y=true} as {x:Nat}).x

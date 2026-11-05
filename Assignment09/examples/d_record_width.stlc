@@ -1,0 +1,7 @@
+(* D. Inference within a record and width subtyping. Expected: Nat, 1.
+   The static interface hides active; the runtime record retains it. *)
+let service =
+  ({run=lambda n. succ n, active=true}
+   as {run:Nat -> Nat})
+in
+service.run 0

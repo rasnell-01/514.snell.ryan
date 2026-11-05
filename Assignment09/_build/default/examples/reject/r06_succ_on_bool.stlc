@@ -1,0 +1,2 @@
+(* Body attempts natural-number arithmetic on a Boolean. *)
+(lambda x. succ x) as (Bool -> Nat)

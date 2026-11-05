@@ -1,0 +1,2 @@
+(* Function synthesis cannot infer the omitted parameter from a later argument. *)
+(lambda x. succ x) 0

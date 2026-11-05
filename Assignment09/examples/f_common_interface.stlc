@@ -1,0 +1,5 @@
+(* F. Expected common record interface; no join needed. Expected: Nat, 0 *)
+((if true
+  then {id=0, active=true}
+  else {id=succ 0, score=0})
+ as {id:Nat}).id

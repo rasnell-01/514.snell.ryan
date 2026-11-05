@@ -1,0 +1,2 @@
+(* Width subtyping at an application. Expected: Nat, 0 *)
+(lambda r:{x:Nat}. r.x) {x=0, y=true}
